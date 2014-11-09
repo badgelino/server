@@ -33,11 +33,11 @@ $ node --harmony index.js
 `/module/npm/version/gitcreate.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
 `/module/package/version/gitcreate.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
-[1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-orange.svg
+[1badgelino-image-node]: http://95.87.211.169:3000/module/node/version/gitcreate.svg
 [1node-website-url]: https://nodejs.org/
-[1badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
+[1badgelino-image-npm]: http://95.87.211.169:3000/module/npm/version/gitcreate.svg
 [1npm-website-url]: https://npmjs.org/
-[1badgelino-image-package]: http://img.shields.io/badge/gitcreate-v0.0.4-orange.svg
+[1badgelino-image-package]: http://95.87.211.169:3000/module/package/version/gitcreate.svg
 [1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.4-orange.svg
 [1npm-package-url]: https://npmjs.org/package/gitcreate
 
