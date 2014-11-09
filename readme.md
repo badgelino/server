@@ -8,11 +8,11 @@ $ node --harmony index.js
 ```
 
 #### Endpoints
-1. `localhost:3000/module/node/version/module-name.svg`
+1. `localhost:3000/(module|m)/node/(version|v)/module-name.(svg|json)`
   + module's Node version (**dynamic/auto** from `engines` object in package.json)
-2. `localhost:3000/module/npm/version/module-name.svg`
+2. `localhost:3000/(module|m)/npm/(version|v)/module-name.(svg|json)`
   + module's NPM version (**dynamic/auto** from `engines` object in package.json)
-3. `localhost:3000/module/package/version/module-name.svg`
+3. `localhost:3000/(module|m)/package/(version|v)/module-name.(svg|json)`
   + module version (**dynamic/auto** from `version` in package.json)
   + version < 1 - orange color
   + version > 1 - blue color
