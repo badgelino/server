@@ -17,7 +17,7 @@ $ node --harmony index.js
   + version < 1 - orange color
   + version > 1 - blue color
 
-#### Example 1
+#### Example 1 [gitcreate](https://npmjs.org/package/gitcreate)
 ```json
 {
   "name": "gitcreate",
@@ -28,18 +28,18 @@ $ node --harmony index.js
   }
 }
 ```
-#### Results 1
+#### Results 1, Live
 `/module/node/version/gitcreate.svg` [![Node version][1badgelino-image-node]][1node-website-url]  
 `/module/npm/version/gitcreate.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
 `/module/package/version/gitcreate.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
 [1badgelino-image-node]: http://95.87.211.169:3000/module/node/version/gitcreate.svg
-[1node-website-url]: https://nodejs.org/
+[1node-website-url]: http://95.87.211.169:3000/module/node/version/gitcreate.svg
 [1badgelino-image-npm]: http://95.87.211.169:3000/module/npm/version/gitcreate.svg
-[1npm-website-url]: https://npmjs.org/
+[1npm-website-url]: http://95.87.211.169:3000/module/npm/version/gitcreate.svg
 [1badgelino-image-package]: http://95.87.211.169:3000/module/package/version/gitcreate.svg
 [1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.4-orange.svg
-[1npm-package-url]: https://npmjs.org/package/gitcreate
+[1npm-package-url]: http://95.87.211.169:3000/module/package/version/gitcreate.svg
 
 ***
 
