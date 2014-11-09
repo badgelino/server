@@ -1,5 +1,5 @@
 # Badgelino.io
-> Better badges. Built with `koa` and `node-canvas`.
+> Better badges. Built with `oboe.js`, `koa` and `node-canvas`.
 
 #### Very much work in progress
 ```js
