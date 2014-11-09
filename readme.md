@@ -20,8 +20,8 @@ $ node --harmony index.js
 #### Example 1
 ```json
 {
-  "name": "awesomeRepo",
-  "version": "0.0.3",
+  "name": "gitcreate",
+  "version": "0.0.4",
   "engines": {
     "node": ">= 0.10.0",
     "npm": ">= 1.4.28"
@@ -29,17 +29,17 @@ $ node --harmony index.js
 }
 ```
 #### Results 1
-`/module/node/version/awesomeRepo.svg` [![Node version][1badgelino-image-node]][1node-website-url]  
-`/module/npm/version/awesomeRepo.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
-`/module/package/version/awesomeRepo.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
+`/module/node/version/gitcreate.svg` [![Node version][1badgelino-image-node]][1node-website-url]  
+`/module/npm/version/gitcreate.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
+`/module/package/version/gitcreate.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
 [1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-orange.svg
 [1node-website-url]: https://nodejs.org/
 [1badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
 [1npm-website-url]: https://npmjs.org/
-[1badgelino-image-package]: http://img.shields.io/badge/awesomeRepo-v0.0.3-orange.svg
-[1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.3-orange.svg
-[1npm-package-url]: https://npmjs.org/package/awesomeRepo
+[1badgelino-image-package]: http://img.shields.io/badge/gitcreate-v0.0.4-orange.svg
+[1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.4-orange.svg
+[1npm-package-url]: https://npmjs.org/package/gitcreate
 
 ***
 
