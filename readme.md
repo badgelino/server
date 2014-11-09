@@ -8,11 +8,11 @@ $ node --harmony index.js
 ```
 
 #### Endpoints
-1. `https://badgelino.io/module/node/version/module-name.svg`
+1. `localhost:3000/module/node/version/module-name.svg`
   + module's Node version (**dynamic/auto** from `engines` object in package.json)
-2. `https://badgelino.io/module/npm/version/module-name.svg`
+2. `localhost:3000/module/npm/version/module-name.svg`
   + module's NPM version (**dynamic/auto** from `engines` object in package.json)
-3. `https://badgelino.io/module/package/version/module-name.svg`
+3. `localhost:3000/module/package/version/module-name.svg`
   + module version (**dynamic/auto** from `version` in package.json)
   + version < 1 - orange color
   + version > 1 - blue color
@@ -29,8 +29,8 @@ $ node --harmony index.js
 }
 ```
 #### Results 1
-`/module/node/version/awesomeRepo.svg` [![Node version][1badgelino-image-node]][1node-website-url]
-`/module/npm/version/awesomeRepo.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]
+`/module/node/version/awesomeRepo.svg` [![Node version][1badgelino-image-node]][1node-website-url]  
+`/module/npm/version/awesomeRepo.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
 `/module/package/version/awesomeRepo.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
 [1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-blue.svg
@@ -55,8 +55,8 @@ $ node --harmony index.js
 }
 ```
 #### Results 2
-`https://badgelino.io/module/node/version/prodrepo.svg` [![Node version][2badgelino-image-node]][2node-website-url]
-`https://badgelino.io/module/npm/version/prodrepo.svg` [![NPM version][2badgelino-image-npm]][2npm-website-url]
+`https://badgelino.io/module/node/version/prodrepo.svg` [![Node version][2badgelino-image-node]][2node-website-url]  
+`https://badgelino.io/module/npm/version/prodrepo.svg` [![NPM version][2badgelino-image-npm]][2npm-website-url]  
 `https://badgelino.io/module/package/version/prodrepo.svg` [![Package version][2badgelino-image-package]][2npm-package-url]
 
 
