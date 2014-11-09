@@ -110,7 +110,7 @@ function request(pattern, params) {
       }
     })
     .node(pattern, function(res) {
-      result.npm = params.service === 'npm' ? res.npm : false
+      result.npm = params.service === 'npm' ? ((res.npm)?res.npm:false) : false
       result.node = params.service === 'node' ? res.node : false
       result[params.name] = typeof res === 'string' ? res : false
       found = true;
