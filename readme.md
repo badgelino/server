@@ -33,7 +33,7 @@ $ node --harmony index.js
 `/module/npm/version/awesomeRepo.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
 `/module/package/version/awesomeRepo.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
-[1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-blue.svg
+[1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-orange.svg
 [1node-website-url]: https://nodejs.org/
 [1badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
 [1npm-website-url]: https://npmjs.org/
@@ -60,7 +60,7 @@ $ node --harmony index.js
 `https://badgelino.io/module/package/version/prodrepo.svg` [![Package version][2badgelino-image-package]][2npm-package-url]
 
 
-[2badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.11.14-blue.svg
+[2badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.11.14-orange.svg
 [2node-website-url]: https://nodejs.org/
 [2badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%202.1.0-blue.svg
 [2npm-website-url]: https://npmjs.org/
