@@ -33,13 +33,13 @@ $ node --harmony index.js
 `/module/npm/version/gitcreate.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]  
 `/module/package/version/gitcreate.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
 
-[1badgelino-image-node]: http://95.87.211.169:3000/module/node/version/gitcreate.svg
-[1node-website-url]: http://95.87.211.169:3000/module/node/version/gitcreate.svg
-[1badgelino-image-npm]: http://95.87.211.169:3000/module/npm/version/gitcreate.svg
-[1npm-website-url]: http://95.87.211.169:3000/module/npm/version/gitcreate.svg
-[1badgelino-image-package]: http://95.87.211.169:3000/module/package/version/gitcreate.svg
+[1badgelino-image-node]: http://j.mp/1uPf9X6
+[1node-website-url]: http://j.mp/1uPf9X6
+[1badgelino-image-npm]: http://j.mp/1xmQ8RO
+[1npm-website-url]: http://j.mp/1xmQ8RO
+[1badgelino-image-package]: http://j.mp/1xvZvNr
 [1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.4-orange.svg
-[1npm-package-url]: http://95.87.211.169:3000/module/package/version/gitcreate.svg
+[1npm-package-url]: http://j.mp/1xvZvNr
 
 ***
 
