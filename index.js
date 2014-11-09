@@ -48,74 +48,49 @@ function * handler(next) {
     this.response.body = JSON.stringify(data, null, 2);
     return yield* next;
   }
-  var left = '';
-  var right = '';
-  var body;
 
   this.response.type = 'image/svg+xml'
 
   if (data[data.name]) {
-    left = data.name
-    right = data[data.name]
-    data = {};
-    data.left_color = '#555'
-    data.right_color = right.match(semverRegex())[0][0] > 0 ? '#007ec6' : '#fe7d37'
-    data.left_text = left
-    data.right_text = 'v'+right
-
-    data.widths = [
-      (canvasContext.measureText(data.left_text).width|0) + 15,
-      (canvasContext.measureText(data.right_text).width|0) + 15,
-    ];
-    body = mm(fs.readFileSync(__dirname + '/default.minstache', 'utf8'), data)
-    this.response.body = body.res
+    this.response.body = genBody(data.name, data[data.name]).res
     return yield* next;
   }
 
   if (data.node) {
-    left = 'node'
-    right = data.node
-    data = {};
-    data.left_color = '#555'
-    data.right_color = right.match(semverRegex())[0][0] > 0 ? '#007ec6' : '#fe7d37'
-    data.left_text = left
-    data.right_text = right
-
-    data.widths = [
-      (canvasContext.measureText(data.left_text).width|0) + 15,
-      (canvasContext.measureText(data.right_text).width|0) + 15,
-    ];
-    body = mm(fs.readFileSync(__dirname + '/default.minstache', 'utf8'), data)
-    this.response.body = body.res
+    this.response.body = genBody('node', data.node).res
     return yield* next;
   }
 
   if (data.npm) {
-    left = 'npm'
-    right = data.npm
-    data = {};
-    data.left_color = '#555'
-    data.right_color = right.match(semverRegex())[0][0] > 0 ? '#007ec6' : '#fe7d37'
-    data.left_text = left
-    data.right_text = right
-
-    data.widths = [
-      (canvasContext.measureText(data.left_text).width|0) + 15,
-      (canvasContext.measureText(data.right_text).width|0) + 15,
-    ];
-    body = mm(fs.readFileSync(__dirname + '/default.minstache', 'utf8'), data)
-    this.response.body = body.res
+    this.response.body = genBody('npm', data.npm).res
     return yield* next;
   }
 
 }
 
-  //this.response.type = 'image/svg+xml'
-function optimize(string, callback) {
-  var svgo = new SVGO();
-  svgo.optimize(string, callback);
+
+function genBody(left, right) {
+  var data = {};
+  data.left_color = '#555'
+  data.right_color = right.match(semverRegex())[0][0] > 0 ? '#007ec6' : '#fe7d37'
+  data.left_text = left
+  data.right_text = right
+
+  data.widths = [
+    (canvasContext.measureText(data.left_text).width|0) + 15,
+    (canvasContext.measureText(data.right_text).width|0) + 15,
+  ];
+  return mm(fs.readFileSync(__dirname + '/default.octet', 'utf8'), data)
 }
 
+
+/**
+ * Send request to NPM registry
+ * 
+ * @param  {String} `pattern` For what to listen oboe.js in json response, `engines`/`version`
+ * @param  {Object} `params` Params coming from route
+ * @return {Function} it's thunk for yield
+ */
 function request(pattern, params) {
   return function(callback) {
     var result = {};

@@ -1,26 +1,76 @@
-# templates [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url] [![Coveralls][coveralls-shields]][coveralls-url]
-> description
+# Badgelino.io
+> Better badges. Built with `koa` and `node-canvas`.
 
-## Install [![Nodei.co stats][npmjs-install]][npmjs-url]
-> Install with [npm](https://npmjs.org)
-
-```
-$ npm install coreflow-templates -g
-```
-
-## Usage
-
-
-## Run tests
-```
-$ npm test
+#### Very much work in progress
+```js
+$ node --harmony index.js
+#=> listen on port 3000
 ```
 
+#### Endpoints
+1. `https://badgelino.io/module/node/version/module-name.svg`
+  + module's Node version (**dynamic/auto** from `engines` object in package.json)
+2. `https://badgelino.io/module/npm/version/module-name.svg`
+  + module's NPM version (**dynamic/auto** from `engines` object in package.json)
+3. `https://badgelino.io/module/package/version/module-name.svg`
+  + module version (**dynamic/auto** from `version` in package.json)
+  + version < 1 - orange color
+  + version > 1 - blue color
 
-## CLI
+#### Example 1
+```json
+{
+  "name": "awesomeRepo",
+  "version": "0.0.3",
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.4.28"
+  }
+}
+```
+#### Results 1
+`/module/node/version/awesomeRepo.svg` [![Node version][1badgelino-image-node]][1node-website-url]
+`/module/npm/version/awesomeRepo.svg` [![NPM version][1badgelino-image-npm]][1npm-website-url]
+`/module/package/version/awesomeRepo.svg` [![Package version][1badgelino-image-package]][1npm-package-url] or [![Package version][1badgelino-image-package2]][1npm-package-url]
+
+[1badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.10.0-blue.svg
+[1node-website-url]: https://nodejs.org/
+[1badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
+[1npm-website-url]: https://npmjs.org/
+[1badgelino-image-package]: http://img.shields.io/badge/awesomeRepo-v0.0.3-orange.svg
+[1badgelino-image-package2]: http://img.shields.io/badge/version-0.0.3-orange.svg
+[1npm-package-url]: https://npmjs.org/package/awesomeRepo
+
+***
+
+#### Example 2
+```json
+{
+  "name": "prodrepo",
+  "version": "3.8.11",
+  "engines": {
+    "node": ">= 0.11.14",
+    "npm": ">= 2.1.0"
+  }
+}
+```
+#### Results 2
+`https://badgelino.io/module/node/version/prodrepo.svg` [![Node version][2badgelino-image-node]][2node-website-url]
+`https://badgelino.io/module/npm/version/prodrepo.svg` [![NPM version][2badgelino-image-npm]][2npm-website-url]
+`https://badgelino.io/module/package/version/prodrepo.svg` [![Package version][2badgelino-image-package]][2npm-package-url]
 
 
-## API
+[2badgelino-image-node]: http://img.shields.io/badge/node-%3E=%200.11.14-blue.svg
+[2node-website-url]: https://nodejs.org/
+[2badgelino-image-npm]: http://img.shields.io/badge/npm-%3E=%202.1.0-blue.svg
+[2npm-website-url]: https://npmjs.org/
+[2badgelino-image-package]: http://img.shields.io/badge/prodrepo-v3.8.11-blue.svg
+[2npm-package-url]: https://npmjs.org/package/prodrepo
+
+
+
+
+
 
 
 
