@@ -19,6 +19,11 @@ var oboe = require('oboe');
 var SVGO = require('svgo');
 var semverRegex = require('semver-regex')
 
+var Canvas = require('canvas');
+var canvasElement = new Canvas(0, 0);
+var canvasContext = canvasElement.getContext('2d');
+canvasContext.font = '11px Verdana, "DejaVu Sans"';
+
 app.use(cdn())
 app.use(route('/(module|m)/:service/(version|v)/:name.:format', handler))
 
